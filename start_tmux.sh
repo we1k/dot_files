@@ -12,15 +12,12 @@ SESSION_NAME=$1
 # 创建一个新的tmux会话
 tmux new-session -d -s $SESSION_NAME
 
-# 在会话中创建一个新窗口，命名为monitoring
-tmux new-window -n monitoring -t $SESSION_NAME
 
 # 分割第一个窗口为上下两个窗格
-tmux split-window -h -t $SESSION_NAME
+tmux split-window -v -t $SESSION_NAME
 
 # 再次分割每个窗格，这次为左右两个窗格
-tmux split-window -v -t $SESSION_NAME:1.1
-tmux split-window -v -t $SESSION_NAME:1.2
+tmux split-window -h -t $SESSION_NAME:1.1
 
 # 在第一个窗格中运行gpustat
 tmux send-keys -t $SESSION_NAME:1.1 'gpustat -i 1' C-m
