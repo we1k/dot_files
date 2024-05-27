@@ -120,6 +120,9 @@ fi
 # setting alias for ll
 alias ll="ls -la"
 
+# adding env vars
+export HF_END_POINT=https://hf-mirror.com
+
 function proxy_on() {
     export http_proxy=http://127.0.0.1:7890
     export https_proxy=$http_proxy
