@@ -1,36 +1,31 @@
 # basic library
 tqdm
+matplotlib
+beautifulsoup4
+scikit-learn
 dataclasses
 
+# NLP library 
+# nltk
+# einops
+# openai
+# tiktoken
+# sentence-transformers
+
+
 # Pytorch library
+torch
+tensorboard
+# deepspeed
 
 # hf library
 transformers
+peft
 datasets
 evaluate
-peft
 bitsandbytes
+accelerate
 trl
 
-sentence-transformers
-beautifulsoup4
-
-peft
-accelerate==0.21.0
-
-
-vllm
-torch
-transformers
-
-nltk
-
-# flash-attn==2.2.2
-einops
-deepspeed>=0.10.0
-bitsandbytes>=0.41.1
-openai==0.28.1
-evaluate>=0.4.0
-tokenizers>=0.13.3
-tensorboard
-tiktoken
+# flash-attn
+# git+https://github.com/huggingface/Megatron-LM.git
